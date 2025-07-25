@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.header {
+    background-color: #2d2d2d;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+}
+
+/* .logo {
+    background-color: #ebc313;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-weight: bold;
+} */
+
+.logo img{
+    width: 85px;
+    height: 85px;
+    border-radius: 10px;
+}
+
+.nav_buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav_buttons button {
+    background-color: #5b00e6;
+    padding: 27px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav_buttons a {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.popular_title {
+    text-align: center;
+    /* position:  relative; */
+    font-size: 60px;
+    /* margin: 20px 0; */
+    font-weight: bold;
+    font-style: italic;
+}
+
+.popular_title2 {
+    height: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    /* position:  relative; */
+    font-size: 60px;
+    /* margin: 20px 0; */
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-left: 100px;
+}
+
+.card {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    margin-right: 80px;
+    border-radius: 30px;
+    width: 420px;
+    height: 600px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.cart {
+    border-radius: 10px;
+    width: 80px;
+    height: 74px;
+    background-color: #5b00e6;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart_text {
+    
+}
+
+.cart:hover .cart-overlay {
+    display: block;
+}
+
+.cart img{
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.cart_text{
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.product_title {
+    font-size:35px;
+    font-style: italic;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.price {
+    font-size: 40px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.sale {
+    background-color: #ffe15e;
+    color:#000000;
+    font-size: 35px;
+    padding: 5px;
+    margin-left: 10px;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.add_button {
+    background-color: #5b00e6;
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.feedback_card {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    margin-right: 80px;
+    border-radius: 30px;
+    width: 600px;
+    height: 220px;
+}
+
+.feedback_name {
+    font-size:35px;
+    font-style: italic;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.feedback_text {
+    font-size:27px;
+    font-style: italic;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+
+.footer {
+    /* background-color: #999; */
+    display: flex;
+    justify-content: center;
+    
+    padding: 20px;
+}
+
+.insta {
+    border-radius: 100px;
+}
+
+hr {
+    background-color: #2d2d2d;
+    height: 4px;
+}
+
+.footer img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+
+.cart-overlay{
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    position: fixed;
+    top: 20%;
+    left: 29%;
+    background-color: #dddddd;
+    border: 3px solid black;
+    display: none;
+}
+    
+
+.cart-overlay h4{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cart-overlay p{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.cart-overlay button{
+    background:none;
+    border: none;
+    font-style: bold;
+    font-size: 25px;
+
+}
+
+.cart-overlay hr {
+    background-color: #2d2d2d;
+    height: 2px;
+    border: none;
+}
+
+.cart-overlay img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 285px;
+}
+
+.cart-overlay-span {
+    text-align: left;
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 610px;
+}

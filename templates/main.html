@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendLab </title>
+  <link rel="icon" href="{{ url_for('static', filename='img/trendlab.png') }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo"><img src="{{ url_for('static', filename='img/trendlab.png') }}"></div>
+        
+        <div class="nav_buttons">
+          <button><a href="#discount">ЗНИЖКИ</a></button>
+          <button><a href="#items">ТОВАРИ</a></button>
+          <button><a href="#main">ГОЛОВНА</a></button>
+          <button><a href="#feedback">ВІДГУКИ</a></button>
+        </div>
+      
+        <div class="cart">
+          <img src="{{ url_for('static', filename='img/cart.png') }}" width="40" height="40" align="middle">
+          <span class="cart_text">Кошик</span>
+          <div class="cart-overlay">
+            <span class="cart-overlay-span">Кошик</span>
+            <button>X</button>
+            <hr>
+            <img src="{{ url_for('static', filename='img/cart.png') }}">
+            <h4> Кошик порожній</h4>
+            <p>Але це ніколи не пізно виправити :)</p>
+          </div>
+        </div>
+      </div>
+      
+  <div class="popular_title2" id="main"></div>
+  <div class="popular_title2"></div>
+  <div class="popular_title">ПОПУЛЯРНЕ</div>
+
+  <div class="products">
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/tshort 1.jpg') }}">
+      <div class="product_title">Біла футболка FOCUS</div>
+      <span class="price">8$</span>
+      <div><button class="add_button">Добавити в кошик</button></div>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/tshort 2.jpg') }}">
+      <div class="product_title">Біла футболка 404</div>
+      <span class="price">8$</span>
+      <div><button class="add_button">Добавити в кошик</button></div>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/tshort 3.jpg') }}">
+      <div class="product_title">Біла футболка Loading...</div>
+      <span class="price">8$</span>
+      <div><button class="add_button">Добавити в кошик</button></div>
+    </div>
+  </div>
+
+  <div class="popular_title2" id="discount"></div>
+  <div class="popular_title">Пропозиція дня!!!</div>
+
+  <div class="products">
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/tshort 1.jpg') }}">
+      <div class="product_title">Біла футболка</div>
+      <span class="price">8$</span>
+      <span class="sale"> -15%</span>
+      <div><button class="add_button">Добавити в кошик</button></div>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/tshort 2.jpg') }}">
+      <div class="product_title">Біла футболка</div>
+      <span class="price">8$</span>
+      <span class="sale"> -15%</span>
+      <div><button class="add_button">Добавити в кошик</button></div>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/tshort 3.jpg') }}">
+      <div class="product_title">Біла футболка</div>
+      <span class="price">8$</span>
+      <span class="sale"> -15%</span>
+      <div><button class="add_button">Добавити в кошик</button></div>
+    </div>
+  </div>
+
+  <div class="popular_title2" id="items"></div>
+  <div class="popular_title">Інші товари</div>
+
+  <div class="products">
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/pans.jpg') }}">
+      <div class="product_title">Сірі брюки</div>
+      <span class="price">9.95$</span>
+      <div><button class="add_button">Добавити в кошик</button></div>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/shoes.png') }}">
+      <div class="product_title">Білі кросівки</div>
+      <span class="price">14$</span>
+      <div><button class="add_button">Добавити в кошик</button></div>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/hudi.png') }}">
+      <div class="product_title">Біла худі</div>
+      <span class="price">15$</span>
+      <div><button class="add_button">Добавити в кошик</button></div>
+    </div>
+  </div>
+
+  <div class="popular_title2" id="feedback"></div>
+  <div class="popular_title">ВІДГУКИ</div>
+
+  <div class="feedback">
+    <div class="feedback_card">
+      <span class="feedback_name"> DionisLis
+        <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+        <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+        <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+        <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+        <div class="feedback_text"> Ці кофтинки дуже красиві і ношу їх кожен день. Один мінус: їх дуже мало</div>
+    </div>
+    <div class="feedback_card">
+      <span class="feedback_name"> Сергій
+        <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+        <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+        <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+        <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+        <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+        <div class="feedback_text"> Я люблю цей сайт. Це найкращій сайт. Заказав худі та пришло швидко, усім пропоную!!</div>
+    </div>
+    <div class="feedback_card">
+      <span class="feedback_name"> Катя
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <div class="feedback_text"> Заказала собі брюки. Пришли швидко, та воні дуже зручні і з гарного матеріалу.❤️</div>
+    </div>
+  <div class="feedback_card">
+    <span class="feedback_name"> Максим
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <img src="{{ url_for('static', filename='img/star.png') }}" width="35" height="35"> </span>
+      <div class="feedback_text"> Прекрасний сайт, замовляв собі штани, ще не встиг натиснути на кнопку "замовити" як до мене вже постукав кур'єр. Навіть грошей не взяли 👍</div>
+  </div>
+  </div>
+
+  <div class="popular_title2"></div>  
+  <hr>
+
+  <div class="footer">
+    <a href="mailto: trendlabofficialmarket@gmail.com"><img src="{{ url_for('static', filename='img/email.png') }}"></a>
+    <a href="https://t.me/IAmRedStrike" target="_blank"><img src="{{ url_for('static', filename='img/teleg.png') }}"></a>
+    <a href="tel: +39 344 734 6706"><img src="{{ url_for('static', filename='img/pngwing.com (1).png') }}"></a>
+    <a href="https://www.instagram.com/trendlab2025?igsh=MWw1czNzdmYzbXJwbQ==" target="_blank"><img class="insta" src="{{ url_for('static', filename='img/instagram.png') }}"></a>
+  </div>
+
+  
+
+</body>
+</html>
