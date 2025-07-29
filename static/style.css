@@ -106,13 +106,9 @@ body {
     cursor: pointer;
 }
 
-.cart_text {
-    
-}
-
-.cart:hover .cart-overlay {
+/* .cart:hover .cart-overlay {
     display: block;
-}
+} */
 
 .cart img{
     margin-right: 5px;

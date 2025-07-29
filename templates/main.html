@@ -160,7 +160,21 @@
     <a href="https://www.instagram.com/trendlab2025?igsh=MWw1czNzdmYzbXJwbQ==" target="_blank"><img class="insta" src="{{ url_for('static', filename='img/instagram.png') }}"></a>
   </div>
 
-  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cart = document.querySelector(".cart");
+      const overlay = cart.querySelector(".cart-overlay");
+    
+      cart.addEventListener("click", function () {
+        overlay.style.display = "toggle";
+      });
+    
+      cart.addEventListener("click", function () {
+      overlay.style.display = (overlay.style.display === "block") ? "none" : "block";
+       });
+    });
+    </script>
 
 </body>
 </html>
+
