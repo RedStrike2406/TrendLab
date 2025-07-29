@@ -256,6 +256,7 @@ hr {
     background-color: #dddddd;
     border: 3px solid black;
     display: none;
+    cursor:default;
 }
     
 
@@ -277,6 +278,7 @@ hr {
     border: none;
     font-style: bold;
     font-size: 25px;
+    cursor: pointer;
 
 }
 
