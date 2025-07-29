@@ -52,8 +52,9 @@ body {
     /* position:  relative; */
     font-size: 60px;
     /* margin: 20px 0; */
-    font-weight: bold;
+    font-weight: 100;
     font-style: italic;
+    font-family: fantasy;
 }
 
 .popular_title2 {
@@ -240,6 +241,10 @@ hr {
     margin-right: 50px;
 }
 
+.footer img:hover {
+    width: 110px;
+    height: 110px;
+}
 
 .cart-overlay{
     width: 800px;
